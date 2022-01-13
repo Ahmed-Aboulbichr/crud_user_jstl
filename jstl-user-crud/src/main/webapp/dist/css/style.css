@@ -1,0 +1,188 @@
+
+*{
+  	font-family: Monaco, monospace;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #FFFFFF;
+	width : 100%;
+	overflow-x: hidden;
+}
+.container{
+	margin:20px;
+	padding:20px;
+}
+.container .container-header{
+	width:100%;
+	padding: 5px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items : center;
+}
+.container .container-header button{
+	padding :12px 20px;
+	background-color : #003171;
+	color : #fafafa;
+	border-radius:5px;
+	border : None;
+	cursor : pointer;
+}
+.container main header{
+	margin-top : 20px;
+	background-color : #fafafa;
+	width:100%;
+	padding: 5px 20px;
+	display: inline-flex;
+	align-items : center;
+	justify-content : space-between;
+}
+.container main header form{
+	width : 80%;
+}
+.container main header form input[type="search"]{
+	width : 70%;
+	padding: 6px 10px;
+	border: 1px solid #EEEFF1;
+	border-radius : 3px;
+}
+.container main header form input[type="submit"], .container main header button{
+	padding :  7px 10px;
+	background-color : white;
+	color : #003171;
+	border: 1px solid #EEEFF1;
+	border-radius : 3px;
+	cursor : pointer;
+}
+.container main main table{
+	margin-top: 30px;
+	width : 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+.container main main table thead tr{
+	background-color :  #003171;
+	color :  #fafafa;
+}
+.container main main table thead tr th{
+	padding : 8px;
+}
+.container main main table tbody tr td{
+	padding : 8px;
+	border-bottom : 1px solid #EEEFF1;
+}
+.container main main table tbody tr td:last-child {
+	width : 50%;
+	display : inline-flex;
+	align-items : center;
+	justify-content: space-around;
+}
+.container main main table tbody tr td:last-child *{
+	cursor : pointer;
+	background-color : #EEEFF1;
+	padding : 8px;
+	border-radius : 50px;
+	display : flex;
+	align-items : center;
+	border:1px solid #c0c0c0;
+}
+.container main footer{
+	margin-top : 20px;
+	background-color : #fafafa;
+	width:100%;
+	padding: 5px 20px;
+	display: inline-flex;
+	align-items : center;
+	justify-content : space-between;
+}
+.container footer.footer{
+	width : 100%;
+	background-color : #fafafa;
+	position: fixed;
+	bottom : 0;
+	left : 0;
+	padding : 8px 20px;
+	text-align : center;
+}
+
+#editModal, #addModal {
+	position: absolute;
+	top : 0;
+	right: 0px;  
+	height: 100vh;
+	transform: translateX(300%); 
+	width : 50%;
+	background: #003171;
+	box-shadow: 0 10px 20px rgba(black, 0.2);
+	padding: 100px; 
+	transition: transform 250ms ease-in-out;	
+	border-bottom-left-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	color : #fafafa;
+}
+#editModal section.editSection, #addModal section.editSection{
+	display: flex;
+	flex-direction: column;
+}
+#editModal section.editSection h1, #addModal section.editSection h1{
+	text-align: center;
+}
+.showModal{
+	transform: translateX(0%) !important;
+}
+section.editSection form .txtUser, section.addSection form .txtUser{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+section.editSection form .txtUser input, section.addSection form .txtUser input{
+	padding : 5px;
+	border : 1px solid  #fafafa;
+}
+section.editSection form .footer, section.addSection form .footer{
+	padding : 5px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+section.editSection form .footer input:last-child, section.addSection form .footer input:last-child{
+	padding: 8px 10px;
+	background : #fafafa;
+	border: 1px solid #ffffff;
+	margin-right : 5px;
+	color : #003171;
+}
+section.editSection form .footer input:first-child, section.addSection form .footer input:first-child{
+	padding: 8px 10px;
+	background : inherit;
+	border: none;
+	color : #fafafa;
+	border-bottom: 1px solid #ffffff;
+	margin-right : 5px;
+}
+
+section.editSection form .footer input:hover, section.addSection form .footer input:hover{
+	background : #003171;
+	color : #fafafa;
+	border: 1px solid #ffffff;
+}
+input{
+	border-radius : 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
